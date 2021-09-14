@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    text-align: centre;
+    padding: 5px 5%;
+    background-image: url('../img/bg.jpg');
+    background-size: 100%;
+    color: white;
+    font: 12pt 'Verdana';
+}
+
+header {
+    height: 65px;
+    background: #161c35;
+}
+
+.main-wrapper {
+    margin: 0 auto;
+    width: 1170px;
+    padding: 0 15px;
+}
+
+.main-menu > ul > li {
+    display: inline-block;
+    margin: 5px;
+    padding: 15px;
+}
+
+header .main-wrapper {
+    display: flex;
+    align-items: centre;
+    justify-content: space-between;
+    height: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-right: 5px;
+}
+
+.main-menu > ul > li:last-child > a {
+    margin-right: 0;
+}
+
+.main-menu > ul > li > a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    position: relative;
+}
+
+.main-menu > ul > li > a::after {
+    content: "";
+    width: 10%;
+    height: 3px;
+    background: #00D5C3;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 25px;
+    transition-duration: 0.3s;
+    opacity: 0;
+}
+
+.main-menu > ul > li > a:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.main-board .main-wrapper .main-board_left-block > ul > li > a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+
+}
+
+.main-board .main-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%
+    position: relative;
+    z-index: 2;
+}
+
+.main-board_left-block {
+    width: 50%;
+}
+
+.main-board .main-wrapper > img {
+    margin: auto;
+}
+
+.main-board {
+    height: 500px;
+    background: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: 50% -50px;
+    position: relative;
+}
+
+.main-board::after {
+    content: "";
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0px;
+    background: rgba(33, 42, 73, 0.6);
+}
+
+.main-box > h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #444444;
+    text-align: center;
+    text-transform: uppercase;
+    position: center;
+}
+
+footer {
+    height: 65px;
+    background: #161c35;
+}
+
+footer > h4 {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-right: 5px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NewsPortal - {% block title %}{% endblock %}</title>
+    <link href="<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+</head>
+<body>
+    <header>
+        <div class="main-wrapper">
+            <img src="../static/img/logo.png" alt="NewsPortal">
+                <div class="main-menu">
+                    <li><a href="/">Главная страница</a></li>
+                    <li><a href="/applicants/applicant">Абитуриентам</a></li>
+                    <li><a href="/student/student">Студентам</a></li>
+                    <li><a href="/partners/letter">Партнерам</a></li>
+                </div>
+        </div>
+    </header>
+    <main>
+        <section class="main-board">
+                <div class="main-wrapper">
+                  <div class="main-board_left-block">
+                        <ul>
+                            <li><a href="/">Главная</a></li>
+                            <li><a href="/news/news">Новости университета</a></li>
+                            <li><a href="/news/contact">Контакты</a></li>
+                        </ul>
+                  </div>
+                    <img src="../static/img/mobile-mockup.png" alt="">
+                </div>
+
+            </section>
+        {% block content %} {% endblock %}
+    </main>
+    <br>
+    <footer>
+        <h4>Copyright: MyCompany - Kyiv, 2021</h4>
+    </footer>
+</body>
+</html>
